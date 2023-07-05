@@ -1,0 +1,12 @@
+.activity-kpi {
+  list-style: none;
+}
+
+.activity-kpi label {
+  padding: 0 10px;
+  color: grey;
+}
+
+.activity-lead {
+  font-weight: bold;
+}

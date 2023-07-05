@@ -1,0 +1,13 @@
+.table-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-content {
+  flex-grow: 1;
+}
+
+.hrz-list {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,17 +1,14 @@
-import Header from './Header'
-import SideMenu from './SideMenu'
-import DriverTable from './DriverTable'
+import DriverTable from "./DriverTable";
+import DefaultLayout from "./DefaultLayout";
+import { getDriverTableDataSource } from "../functions/DataApi";
 
 function Home() {
+  const driverTableDataSource = getDriverTableDataSource();
   return (
-    <div className='app-root'>
-      <Header />
-      <div className='app-body'>
-        <SideMenu />
-        <DriverTable />
-      </div>
-    </div>
-  )
+    <DefaultLayout>
+      <DriverTable DataSource={driverTableDataSource} />
+    </DefaultLayout>
+  );
 }
 
-export default Home
+export default Home;

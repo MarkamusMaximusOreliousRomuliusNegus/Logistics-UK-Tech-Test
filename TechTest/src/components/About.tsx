@@ -1,16 +1,11 @@
-import Header from './Header'
-import SideMenu from './SideMenu'
+import DefaultLayout from "./DefaultLayout";
 
 function About() {
   return (
-    <div className='app-root'>
-      <Header />
-      <div className='app-body'>
-        <SideMenu />
-        <div>About Page</div>
-      </div>
-    </div>
-  )
+    <DefaultLayout>
+      <div>About Page</div>
+    </DefaultLayout>
+  );
 }
 
-export default About
+export default About;

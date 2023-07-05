@@ -1,0 +1,27 @@
+.list-square {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+}
+
+.list-square-title {
+  font-size: 8pt;
+  text-align: center;
+}
+
+.list-square-icon {
+  flex-grow: 1;
+  width: 50%;
+  max-height: 50%;
+  margin: auto;
+  border: solid;
+}
+
+.list-square-icon.enabled {
+  background-color: green;
+}
+
+.list-square-icon.disabled {
+  background-color: unset;
+}

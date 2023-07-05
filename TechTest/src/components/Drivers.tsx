@@ -1,16 +1,11 @@
-import Header from './Header'
-import SideMenu from './SideMenu'
+import DefaultLayout from "./DefaultLayout";
 
 function Drivers() {
   return (
-    <div className='app-root'>
-      <Header />
-      <div className='app-body'>
-        <SideMenu />
-        <div>Drivers Page</div>
-      </div>
-    </div>
-  )
+    <DefaultLayout>
+      <div>Drivers Page</div>
+    </DefaultLayout>
+  );
 }
 
-export default Drivers
+export default Drivers;

@@ -1,16 +1,11 @@
-import Header from './Header'
-import SideMenu from './SideMenu'
+import DefaultLayout from "./DefaultLayout";
 
 function Vehicles() {
   return (
-    <div className='app-root'>
-      <Header />
-      <div className='app-body'>
-        <SideMenu />
-        <div>Vehicles Page</div>
-      </div>
-    </div>
-  )
+    <DefaultLayout>
+      <div>Vehicles Page</div>
+    </DefaultLayout>
+  );
 }
 
-export default Vehicles
+export default Vehicles;
