@@ -1,13 +1,39 @@
 .table-root {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
 }
 
 .table-content {
   flex-grow: 1;
+  overflow: hidden;
+}
+
+.table-content thead tr th {
+  color: grey;
 }
 
 .hrz-list {
   display: flex;
   flex-direction: row;
+}
+
+.table-content .MuiTableContainer-root {
+  overflow: auto;
+  height: 100%;
+}
+
+.table-content thead tr th {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 0;
+}
+
+.table-content thead tr th span {
+  border-bottom: solid 1px grey;
+  padding: 16px;
+  display: block;
+  min-height: 25px;
 }

@@ -1,36 +1,33 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import About from './components/About';
-import Drivers from './components/Drivers';
-import Home from './components/Home';
-import Vehicles from './components/Vehicles';
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/views/About";
+import Drivers from "./components/views/Drivers";
+import Home from "./components/views/Home";
+import Vehicles from "./components/views/Vehicles";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/drivers",
-    element: <Drivers/>,
+    element: <Drivers />,
   },
   {
     path: "/vehicles",
-    element: <Vehicles/>,
+    element: <Vehicles />,
   },
   {
     path: "/about",
-    element: <About/>,
+    element: <About />,
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

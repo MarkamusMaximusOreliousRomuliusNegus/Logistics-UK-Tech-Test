@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: darkgrey;
   background-color: #242424;
 
   font-synthesis: none;
@@ -29,4 +29,11 @@ body,
 
 body {
   width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+
+#root {
+  height: 100%;
 }

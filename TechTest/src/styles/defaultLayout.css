@@ -1,18 +1,58 @@
 .app-root {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.app-body {
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 }
 
+.app-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app-body-content {
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+  padding: 10px;
+}
+
 #root {
   width: 100%;
   max-width: 1400px;
-  background: rgb(73, 52, 25);
+  background: whitesmoke;
+}
+
+.vertical-menu {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 110px 0 0 0;
+  background: #ececec;
+}
+
+.vertical-menu li {
+  padding: 5px 15px;
+  width: 120px;
+  font-size: 14pt;
+  border-left: solid 4px steelblue;
+  font-weight: bold;
+}
+
+.vertical-menu .active {
+  color: white;
+  border-left: solid 4px steelblue;
+  background-color: steelblue;
+}
+
+.vertical-menu a {
+  color: slategray;
+  font-size: none;
+}
+.vertical-menu .active a {
+  color: white;
+}
+a:hover {
+  color: steelblue;
 }

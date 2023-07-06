@@ -41,7 +41,9 @@ function DriverTable(props: DriverTableProps) {
   const [driverFilter, setdriverFilter] = useState("");
 
   // search filter change handler
-  const onDriverFilterChange = (e: any): void => {
+  const onDriverFilterChange = (
+    e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ): void => {
     const value = e?.target?.value;
     setdriverFilter(value);
   };
@@ -105,10 +107,18 @@ function DriverTable(props: DriverTableProps) {
           <Table aria-label="driver table">
             <TableHead>
               <TableRow>
-                <TableCell>Driver name</TableCell>
-                <TableCell align="right">Vehicle Reg</TableCell>
-                <TableCell align="right">Total Activity</TableCell>
-                <TableCell align="right"></TableCell>
+                <TableCell>
+                  <span>Driver name</span>
+                </TableCell>
+                <TableCell align="right">
+                  <span>Vehicle Reg</span>
+                </TableCell>
+                <TableCell align="right">
+                  <span>Total Activity</span>
+                </TableCell>
+                <TableCell align="right">
+                  <span></span>
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>{dataRows}</TableBody>
